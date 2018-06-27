@@ -2,6 +2,9 @@
 Single Sign On demo setup, which forms a basis for testing you app with Shibboleth/SAML-based authentication.
 
 ## Build
+
+*NOTE*: currently broken due to a missing RPM, please contact menzo.windhouwer@di.huc.knaw.nl to get it.
+
 ```sh
 docker build -t sso-demo-sp sso-demo-sp
 docker build -t sso-demo-idp sso-demo-idp
