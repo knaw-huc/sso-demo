@@ -29,7 +29,7 @@ Add the same IP to `sp.example.org` and `idp.example.org` to your `/etc/hosts`:
 IP    sp.example.org idp.example.org
 ```
 
-Visit https://sp.example.org/ and click on [Shibboleth login](https://sp.example.org/Shibboleth.sso/Login?target=https://sp.example.org/index.php) to login via the IdP (use `jsmith:password` (see sso-demo-idp/ldap/users.ldif)).
+Visit https://sp.example.org/ and click on [Shibboleth login](https://sp.example.org/Shibboleth.sso/Login?target=https://sp.example.org/index.php) to login via the IdP (use `jsmith:password` (see [sso-demo-idp/ldap/users.ldif](sso-demo-idp/ldap/users.ldif))).
 
 Shibboleth requires HTTPS and this setup uses self-signed certificates, so you'll have to (temporarily) accept those.
 
