@@ -1,10 +1,8 @@
 #!/bin/sh
 set -x
 
-export JAVA_HOME=/usr/java/default
 export JETTY_HOME=/opt/jetty/
 export JETTY_BASE=/opt/iam-jetty-base/
-export PATH=$PATH:$JAVA_HOME/bin
 
 echo "Fetch sp.example.org Shibboleth metadata."
 wget --no-check-certificate -O /opt/shibboleth-idp/metadata/sp.xml https://sp.example.org/Shibboleth.sso/Metadata
@@ -28,4 +26,4 @@ tail -f /var/log/dirsrv/slapd-dir/access &
 export JAVA_OPTIONS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 
 cd /opt/iam-jetty-base
-$JAVA_HOME/bin/java -jar ../jetty/start.jar
+java -jar ../jetty/start.jar
