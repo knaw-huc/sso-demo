@@ -21,17 +21,47 @@ userPassword: password
 passwordExpirationTime: 20250310152142Z
 
 #Good account
-dn: uid=jsmith1,ou=People,dc=example,dc=edu
+dn: uid=john@example.com,ou=People,dc=example,dc=edu
 objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: inetOrgPerson
 objectClass: passwordObject
-givenName: Joe
-uid: jsmith1
-sn: Smith1
-cn: John Smith1
-mail: jsmith1@example.edu
+givenName: John
+uid: john@example.com
+sn: Example
+cn: John Example
+mail: john@example.com
+userPassword: password
+passwordExpirationTime: 20250310152142Z
+
+#Good account
+dn: uid=jane@example.com,ou=People,dc=example,dc=edu
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: passwordObject
+givenName: Jane
+uid: jane@example.com
+sn: Example
+cn: Jane Example
+mail: jane@example.com
+userPassword: password
+passwordExpirationTime: 20250310152142Z
+
+#Good account
+dn: uid=douwe.zeldenrust@meertens.knaw.nl,ou=People,dc=example,dc=edu
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: passwordObject
+givenName: Douwe
+uid: douwe.zeldenrust@meertens.knaw.nl
+sn: Zeldenrust
+cn: Douwe Zeldenrust
+mail: douwe.zeldenrust@meertens.knaw.nl
 userPassword: password
 passwordExpirationTime: 20250310152142Z
 
